@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>My <span>Daily Planner</span></header>
+
+     <section class="search-section">
+  <div class="search-wrapper">
+    <input type="search" id="search-input" placeholder="Search task...">
+    <img src="https://cdn-icons-png.flaticon.com/128/149/149852.png" alt="Search Icon">
+  </div>
+</section>
+  <main>
+    <section class="task-input-section">
+
+      <form id="task-form" aria-label="Add New Task">
+      <input type="text" id="task-input" placeholder="Enter a new task...." required>
+
+      <select id="task-category" aria-label="Select task category">
+        <option value="Personal">Personal</option>
+        <option value="Work">Work</option>
+        <option value="Study">Study</option>
+      </select>
+
+      <select id="task-priority" aria-label="Select task priority">
+        <option value="High">High</option>
+         <option value="Medium">Medium</option>
+         <option value="Low">Low</option>
+       </select>
+
+      <input type="date" id="task-due-date" aria-label="Select due date">
+
+      <input type="time" id="task-due-time" aria-label="Select due time">
+
+      <label for="task-completed">
+        <input type="checkbox" id="task-completed"> Mark as completed
+      </label>
+
+      <button type="submit" title="Add Task">Add Task</button>
+    </form>
+
+    </section>
+
+    <section class="extra-controls">
+      <button id="clear-all-btn" title="Remove all tasks">Clear all Tasks</button>
+    </section>
+    <section class="filter-section">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pending">Pending</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </section>
+
+   <div class="drop-down">
+    <details>
+    <summary>🗓️ Daily Routine</summary>
+    <ul>
+      <li>08:00 AM – Morning walk</li>
+      <li>09:00 AM – Breakfast & Read news</li>
+      <li>10:00 AM – Work on project presentation</li>
+      <li>01:00 PM – Lunch</li>
+      <li>03:00 PM – Call with Rahul</li>
+      <li>05:00 PM – Buy groceries</li>
+      <li>07:00 PM – Watch a movie</li>
+      <li>09:00 PM – Plan next day</li>
+    </ul>
+  </details>
+
+  <a href="more-about.html"><button>More About Daily Routine</button></a>
+  </div>
+
+<div class="slider-container">
+  <div class="slider">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC8oHnEXkZnr9FAi0vTsNcMzXSYh3U4d1yDw&s" class="slide active" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwiVqpNd0zv349lznWpZI0-KKoEyp-sFiA_g&s" class="slide" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxrazPu3VZkMyZRPRmykgIzdsu3S69KIiv8w&s" class="slide" />
+  </div>
+    <button class="nav prev">&#10094;</button>
+    <button class="nav next">&#10095;</button>
+</div>
+
+
+    <button id="back-to-top" title="Scroll to top">Back to Top</button>
+    <footer>
+      <div class="footer-container">
+        <div>
+         <h3>HEALTHY LIVING</h3>
+      <ul>
+        <li>CLEAN EATING</li>
+        <li>OXYGEN</li>
+        <li>VEGETARIAN TIMES</li>
+        <li>YOGA JOURNAL</li>
+        <li></li>
+      </ul>
+    </div>
+
+      <div>
+        <h3>OUTDOOR</h3>
+      <ul>
+        <li>BACKPACKER</li>
+        <li>CLIMBING</li>
+        <li>OUTSIDE</li>
+        <li>OUTSIDE TV</li>
+        <li>SKI</li>
+      </ul>
+      </div>
+
+      <div>
+        <h3>ENDURANCE</h3>
+        <ul>
+        <li>PINKBIKE</li>
+        <li>BETA MTB</li>
+        <li>WOMAN'S RUNNING</li>
+        <li>TRAIL RUNNER</li>
+        <li>TRAILFORKS</li>
+      </ul>
+      </div>
+
+      <div>
+        <h3>INDUSTRY</h3>
+        <ul>
+        <li>NASTAR</li>
+        <li>OUTSIDE SHOP</li>
+      </ul>
+      </div>
+      </div>
+      <p>** 2025 My Daily Planner. All rights reserved. **</p>
+    </footer>
+    
+    <div class="dark-mode-toggle">
+  <label for="darkToggle">🌙 Dark Mode</label>
+  <input type="checkbox" id="darkToggle">
+</div>
+  </main>
+
+
+</body>
+</html>
+<script src="script.js"></script> 
